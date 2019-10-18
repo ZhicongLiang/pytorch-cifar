@@ -5,6 +5,14 @@ The structure is borrowed from [pytorch-cifar](https://github.com/kuangliu/pytor
 
 We achieve testing accuracy of 94.16% and 95.43% with DenseNet-40-12 and DensetNet-85-12. And we achieve a testing accuracy of 97.36% with EfficientNet-B0 initialized with ImageNet pretrained weight.
 
+## Result:
+
+![accuracy](https://github.com/ZhicongLiang/pytorch-cifar/blob/master/accuracy.png)
+
+![training curve of model trained from scratch](https://github.com/ZhicongLiang/pytorch-cifar/blob/master/training_curves.png)
+
+![training curve of model trained from pretrianed weight](https://github.com/ZhicongLiang/pytorch-cifar/blob/master/training_curves_2.png)
+
 # Usage
 
 ## to train EfficientNet-b0 from scratch:
@@ -28,6 +36,9 @@ python main.py --model DenseNet3 --gpu 0 --layers 85
 
 python main.py --model MobileNetV2 --epochs 400 --lr 0.1 --bs 128 --wd 4e-5 --gpu 0
 
+## All the weights of model mentioned above can be download from:
+
+[here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/zliangak_connect_ust_hk/EoAqUUtVc3lIuE5p7zOy7oQBylimjiy3OGAOLj1Z_TJhMQ?e=QQVfXY)
 
 
 
